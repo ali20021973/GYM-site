@@ -64,8 +64,8 @@
 				<thead>
 					<tr>
 						<th>ID</th>
-						<th>Description</th>
-						<th>Date</th>
+						<th>الحاله</th>
+						<th>التاريخ</th>
 					</tr>
 				</thead>
 				<tbody>

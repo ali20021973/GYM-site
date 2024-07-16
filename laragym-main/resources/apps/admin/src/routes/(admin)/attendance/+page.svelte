@@ -66,9 +66,9 @@
 				<thead>
 					<tr>
 						<th>ID</th>
-						<th>Member</th>
-						<th>Description</th>
-						<th>Date</th>
+						<th>الشخص</th>
+						<th>الحاله</th>
+						<th>التاريخ</th>
 					</tr>
 				</thead>
 				<tbody>
