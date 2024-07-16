@@ -33,65 +33,66 @@
 
 	$: items = [
 		{
-			path: '/',
-			name: 'Dashboard',
-			icon: Dashboard
-		},
-		{
-			path: '/activities',
-			name: 'Activities',
-			icon: Activities
-		},
-		{
-			path: '/attendance',
-			name: 'Attendance',
-			icon: Attendance
-		},
-		{
-			path: '/members',
-			name: 'Members',
-			icon: Members
-		},
-		{
-			path: '/branches',
-			name: 'Branches',
-			icon: Branches
-		},
-		{
-			path: '/subscriptions',
-			name: 'Subscriptions',
-			icon: Subscriptions
-		},
-		{
-			path: '/packages',
-			name: 'Packages',
-			icon: Packages
-		},
-		{
-			path: '/services',
-			name: 'Services',
-			icon: Services
-		},
-		{
-			path: '/cycles',
-			name: 'Cycles',
-			icon: Cycles
-		},
-		// {
-		// 	path: '/account',
-		// 	name: 'Account',
-		// 	icon: Account
-		// },
-		// {
-		// 	path: '/settings',
-		// 	name: 'Settings',
-		// 	icon: Settings
-		// },
-		{
-			path: '/logout',
-			name: 'Logout',
-			icon: Logout
-		}
+    path: '/',
+    name: 'لوحة التحكم',
+    icon: Dashboard
+},
+{
+    path: '/activities',
+    name: 'الأنشطة',
+    icon: Activities
+},
+{
+    path: '/attendance',
+    name: 'الحضور',
+    icon: Attendance
+},
+{
+    path: '/members',
+    name: 'الأعضاء',
+    icon: Members
+},
+{
+    path: '/branches',
+    name: 'الفروع',
+    icon: Branches
+},
+{
+    path: '/subscriptions',
+    name: 'الاشتراكات',
+    icon: Subscriptions
+},
+{
+    path: '/packages',
+    name: 'الباقات',
+    icon: Packages
+},
+{
+    path: '/services',
+    name: 'الخدمات',
+    icon: Services
+},
+{
+    path: '/cycles',
+    name: 'الدورات',
+    icon: Cycles
+},
+// {
+// 	path: '/account',
+// 	name: 'الحساب',
+// 	icon: Account
+// },
+// {
+// 	path: '/settings',
+// 	name: 'الإعدادات',
+// 	icon: Settings
+// },
+{
+    path: '/logout',
+    name: 'تسجيل الخروج',
+    icon: Logout
+}
+
 	].map((v) => {
 		return { ...v, active: isActive(v.path, active) };
 	});

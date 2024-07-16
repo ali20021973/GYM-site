@@ -65,45 +65,45 @@
 		loadItems();
 	});
 </script>
-
 <div class="flex flex-col gap-6 p-6">
-	<div class="statistics">
-		<StatisticsCard
-			href="/subscriptions"
-			icon={SubscriptionIcon}
-			value={stats.subscriptions}
-			title="Total Subscription"
-		/>
-		<StatisticsCard
-			href="/services"
-			icon={ServicesIcon}
-			value={stats.services}
-			title="Total Services"
-		/>
-		<StatisticsCard
-			href="/packages"
-			icon={PackagesIcon}
-			value={stats.packages}
-			title="Total Packages"
-		/>
-		<StatisticsCard
-			href="/members"
-			icon={MembersIcon}
-			value={stats.members}
-			title="Total Members"
-		/>
-	</div>
-	<div class="flex flex-col gap-6 lg:flex-row">
-		<LatestActivities />
-		<div class="flex flex-1 flex-col gap-6">
-			<MemberLogin on:load={onReloadAttenance} />
-			<LatestAttendance bind:this={attendance} />
-		</div>
-	</div>
+    <div class="statistics">
+        <StatisticsCard
+            href="/subscriptions"
+            icon={SubscriptionIcon}
+            value={stats.subscriptions}
+            title="إجمالي الاشتراكات"
+        />
+        <StatisticsCard
+            href="/services"
+            icon={ServicesIcon}
+            value={stats.services}
+            title="إجمالي الخدمات"
+        />
+        <StatisticsCard
+            href="/packages"
+            icon={PackagesIcon}
+            value={stats.packages}
+            title="إجمالي الباقات"
+        />
+        <StatisticsCard
+            href="/members"
+            icon={MembersIcon}
+            value={stats.members}
+            title="إجمالي الأعضاء"
+        />
+    </div>
+    <div class="flex flex-col gap-6 lg:flex-row">
+        <LatestActivities />
+        <div class="flex flex-1 flex-col gap-6">
+            <MemberLogin on:load={onReloadAttenance} />
+            <LatestAttendance bind:this={attendance} />
+        </div>
+    </div>
 </div>
 
 <style>
-	.statistics {
-		@apply grid grid-cols-1 gap-6 lg:grid-cols-4;
-	}
+    .statistics {
+        @apply grid grid-cols-1 gap-6 lg:grid-cols-4;
+    }
 </style>
+
