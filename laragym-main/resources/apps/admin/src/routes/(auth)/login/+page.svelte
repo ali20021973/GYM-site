@@ -32,45 +32,46 @@
 	};
 </script>
 
-<div class="mb-6">
-	<h3 class="h3">Account Login</h3>
-	<p>Please login to get started</p>
+<div class="mb-6" dir="rtl">
+    <h3 class="h3">تسجيل الدخول إلى الحساب</h3>
+    <p>يرجى تسجيل الدخول للبدء</p>
 </div>
 
-<form action="" on:submit|preventDefault={onSubmit}>
-	<div class="mb-4">
-		<label class="label">
-			<span>Email</span>
-			<input
-				class="input"
-				bind:value={fields.email}
-				name="email"
-				type="email"
-				disabled={loading}
-				placeholder="john@doe.com"
-				required
-			/>
-		</label>
-	</div>
+<form action="" on:submit|preventDefault={onSubmit} dir="rtl">
+    <div class="mb-4">
+        <label class="label">
+            <span>البريد الإلكتروني</span>
+            <input
+                class="input"
+                bind:value={fields.email}
+                name="email"
+                type="email"
+                disabled={loading}
+                placeholder="john@doe.com"
+                required
+            />
+        </label>
+    </div>
 
-	<div class="mb-6">
-		<label class="label">
-			<span>Password</span>
-			<input
-				class="input"
-				bind:value={fields.password}
-				name="password"
-				type="password"
-				placeholder=""
-				disabled={loading}
-				required
-			/>
-		</label>
-	</div>
-	<button
-		type="submit"
-		disabled={loading}
-		class="btn variant-filled-primary w-full font-bold text-white">Login</button
-	>
-	<a href="/forgot" class="block pt-2 text-center">Forgot password </a>
+    <div class="mb-6">
+        <label class="label">
+            <span>كلمة المرور</span>
+            <input
+                class="input"
+                bind:value={fields.password}
+                name="password"
+                type="password"
+                placeholder=""
+                disabled={loading}
+                required
+            />
+        </label>
+    </div>
+    <button
+        type="submit"
+        disabled={loading}
+        class="btn variant-filled-primary w-full font-bold text-white">تسجيل الدخول</button
+    >
+    <a href="/forgot" class="block pt-2 text-center">هل نسيت كلمة المرور؟</a>
 </form>
+

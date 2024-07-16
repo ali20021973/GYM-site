@@ -32,31 +32,30 @@
 			});
 	};
 </script>
-
-<div class="mb-6">
-	<h3 class="h3">Forgot Password</h3>
-	<p>Please provide your email to reset your password.</p>
+<div class="mb-6" dir="rtl">
+    <h3 class="h3">نسيت كلمة المرور</h3>
+    <p>يرجى تقديم بريدك الإلكتروني لإعادة تعيين كلمة المرور.</p>
 </div>
 
-<form action="" on:submit|preventDefault={onSubmit}>
-	<div class="mb-4">
-		<label class="label">
-			<span>Email</span>
-			<input
-				class="input"
-				bind:value={fields.email}
-				name="email"
-				type="email"
-				placeholder="john@doe.com"
-				required
-				disabled={loading}
-			/>
-		</label>
-	</div>
-	<button
-		type="submit"
-		disabled={loading}
-		class="btn variant-filled-primary w-full font-bold text-white">Submit</button
-	>
-	<a href="/login" class="block pt-2 text-center">Back to login </a>
+<form action="" on:submit|preventDefault={onSubmit} dir="rtl">
+    <div class="mb-4">
+        <label class="label">
+            <span>البريد الإلكتروني</span>
+            <input
+                class="input"
+                bind:value={fields.email}
+                name="email"
+                type="email"
+                placeholder="john@doe.com"
+                required
+                disabled={loading}
+            />
+        </label>
+    </div>
+    <button
+        type="submit"
+        disabled={loading}
+        class="btn variant-filled-primary w-full font-bold text-white">إرسال</button
+    >
+    <a href="/login" class="block pt-2 text-center">العودة إلى تسجيل الدخول</a>
 </form>
